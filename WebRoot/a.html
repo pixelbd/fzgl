@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>食客注册</title>
+<script type="text/javascript" src="js/register.js"></script>
+<script type="text/javascript" src="js/xmlhttprequest.js"></script>
+<style type="text/css">
+<!--
+.style2 {
+	color: #000000;
+	font-size: 9pt;
+}
+.style3 {
+	font-size: 9pt;
+	font-weight: bold;
+}
+.style4 {font-size: 9pt}
+-->
+</style>
+</head>
+
+<body>
+                  <table width="92%"  border="0" align="center" cellpadding="-2" cellspacing="-2">
+                      <tr>
+                        <td><form action="regchk.asp" method="post" name="form1">
+                            <table width="100%"  border="0" cellspacing="-2" cellpadding="-2">
+                              <tr>
+                                <td width="18%" height="30" align="center"><span class="style4">用 户 名：</span></td>
+                                <td width="82%"><input id="regname" name="username" type="text" size="20" maxlength="20">
+                                  <span class="style4">* </span>&nbsp;<span id="namediv" class="morediv">&nbsp;</span></td>
+                              </tr>
+                             
+                              <tr>
+                                <td height="28" align="center"><span class="style4">密&nbsp;&nbsp;&nbsp;&nbsp;码：</span></td>
+                                <td height="28"><input id="regpwd1" name="pass1" type="password" id="PWD14" size="20" maxlength="20">
+                                  <span class="style4">*</span>&nbsp;<span id="pwddiv1" class="morediv">&nbsp;</span></td>
+                              </tr>
+                              <tr>
+                                <td height="28" align="center"><span class="style4">确认密码：</span></td>
+                                <td height="28"><input id="regpwd2" name="pass2" type="password" id="PWD25" size="20" maxlength="20" >
+                                  <span class="style4">* </span><span id="pwddiv2" class="morediv"></span></td>
+                              </tr> 
+							 
+                            </table>
+							<table  width="100%"  border="0" cellspacing="-2" cellpadding="-2"id="more" style="display:none ">
+                              <tr>
+                                <td height="28" align="center"><span class="style4">真实姓名：</span></td>
+                                <td height="28"><input name="truename" type="text" maxlength="10">
+                                  <span class="style4"></span></td>
+                              </tr>
+							       <tr>
+                                <td height="28" align="center"><span class="style4">性&nbsp;&nbsp;&nbsp;&nbsp;别：</span></td>
+                                <td><input name="sex" type="radio" class="noborder" value="男" checked>
+                                  <span class="style4">男</span>&nbsp;
+              <input name="sex" type="radio" class="noborder" value="女">
+              <span class="style4">女</span></td>
+                              </tr>
+							  <tr>
+                                <td height="28" align="center"><span class="style4">生&nbsp;&nbsp;&nbsp;&nbsp;日：</span></td>
+                                <td ><input name="birthday" type="text" id="bir" size="20">
+                                  <span class="style4"></span></td>
+                              </tr>
+                              <tr>
+                                <td height="28" align="center"><span class="style4">联系电话：</span></td>
+                                <td><input name="tel" type="text" id="tel"></td>
+                              </tr>
+							   
+                             
+                             <tr>
+                                <td height="28" align="center"><span class="style4">QQ：</span></td>
+                                <td><input name="qq" type="text" id="qq"></td>
+                              </tr>
+								<tr>
+                                <td height="28" align="center"><span class="style4">密保问题：</span></td>
+                                <td height="28"><input name="question" type="text" id="que" maxlength="20">
+                                  <span class="style4"></span></td>
+                              </tr>
+								<tr>
+                                <td height="28" align="center"><span class="style4">密保答案：</span></td>
+                                <td height="28"><input name="answer" type="text" id="ans" maxlength="20">
+                                  <span class="style4"></span></td>
+                              </tr>
+								 <tr>
+                                <td height="28" align="center" style="padding-left:10px"><span class="style4">Email：</span></td>
+                                <td class="word_grey"><input name="email" type="text" id="PWD224" size="50">
+                                  <span class="style4"></span></td>
+                              </tr>
+							  <tr>
+                                <td height="28" align="center"><span class="style4" >通讯住址：</span></td>
+                                <td class="word_grey">  <input name="address" type="text" id="address" size="50"></td></tr>
+								<input name="type0" type="hiddden" value="0">
+						  </table>
+							 
+                        </form></td>
+                      </tr>
+</table></td>
+                </tr>
+				<tr>
+				<td height="2"></td>
+				</tr>
+				 <tr>
+                                <td height="28" align="center"><span class="style4">验证码：</span></td>
+                                <td height="28"><input id="lgchk" name="yzma" type="text" size="6" maxlength="4"><span id="chknm" name="yzm"style="background-color:#f0f0f0; font-size: 18px; font-weight: bolder; color:#990000; margin: 0px 10px;"> </span> <a id="changea" >看不清</a>
+                                  <span class="style4"></span></span>&nbsp;<span id="lgchkdiv" class="morediv">&nbsp;</span></td>
+                              </tr>
+				<br>
+<tr>
+   <input name="submit1" id="regbtn" type="button"  value="注册" >
+                               
+</tr>
+
+<input name="Submit2" type="button" class="btn_grey" value="详细信息" onClick="more.style.display='block';">
+
+</body>
+</html>

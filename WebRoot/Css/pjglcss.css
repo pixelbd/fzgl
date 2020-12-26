@@ -1,0 +1,20 @@
+
+      .word_white{
+      font-size: 9pt;
+	  	color: #FFFFFF;  }
+      .word_yellow{
+      	font-size: 9pt;
+	  	color: #EC6717;  }
+	  .word_blue{
+	    font-size:9pt;
+	    color:#122072;}
+	  .tableBorder_B {
+	   border: #DFE1EB 1px solid;
+	   border-left-style:none;
+	   border-right-style:none;
+	   border-Top-style:none;
+       }
+	   INPUT.Style_button {
+	  BORDER-RIGHT: #4E759C 1px solid; BORDER-TOP: #4E759C 1px solid; FONT-SIZE: 9pt; 
+	  BACKGROUND: #EFEFEF; BORDER-LEFT: #4E759C 1px solid; COLOR: #4E759C; BORDER-BOTTOM: #4E759C 1px solid;HEIGHT: 20px;width: 60px
+       }

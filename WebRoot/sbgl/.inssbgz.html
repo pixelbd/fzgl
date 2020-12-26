@@ -1,0 +1,204 @@
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><meta http-equiv="content-type" content="text/html; charset=GB2312">
+  <head>
+    <base href="<%=basePath%>">
+    
+    <title>添加设备故障、维修记录...</title>
+    
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">    
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta http-equiv="description" content="This is my page">
+	
+
+<link href="Css/stylerjhinsert.css" rel="stylesheet">
+<script language="javascript">
+
+</script>
+<style type="text/css">
+<!--
+   body {
+   margin-left: 0px; 
+   margin-top: 0px;
+   }
+   .style1 { color: #334094 }
+   .style2 { color: #669999 }
+-->
+</style>
+</head>
+
+<body background="Images/bg2.gif">
+    <script language="javascript">
+   function loadCalendar(field){
+   var rtn = window.showModalDialog("calendar.jsp","","dialogWidth:290px;dialogHeight:250px;status:no;help:no;scrolling=no;scrollbars=no");
+   if(rtn!=null) field.value=rtn;
+   return;
+   }
+   function change1()
+   { form1.submit();}
+   function change2()
+   { form2.submit();}
+   function changebz()
+   { formbz.submit();}
+   function changezg()
+   { formzg.submit();}
+   function Mycheck()
+{
+if (formup.sb.value=="")
+{ alert("请选择故障设备！");form1.sb.focus();return;}
+if (formup.syr.value=="")
+{ alert("请选择设备使用人！");formzg.syr.focus();return;}
+if (formup.tingj.value=="")
+{ alert("请输入停机日期及时间！");formup.tingj.focus();return;}
+if (formup.gz.value=="")
+{ alert("请输入设备故障情况！");formup.gz.focus();return;}
+formup.submit();}
+   </script>
+
+ 
+<table align="center" width="557" height="260" border="1" bordercolor="#BEE09C" cellpadding="-2" cellspacing="-2">
+  <tr>
+    <td width="557" valign="top">
+<table align="center" width="557" height="90" bordercolor="#BEE09C" cellpadding="-2" cellspacing="-2">
+  <tr>
+    <td width="557" height="70" valign="top">
+    <table width="100%" height="70" border="0" cellpadding="-2" cellspacing="-2" background="Images/tjsbgzxx.gif">
+    <tr><td></td></tr>  
+    </table> 
+    </td>
+   </tr>
+  <tr>
+    <td width="557" height="30" valign="top">工长：<font color="#ff0080">{gzname}</font>【班组设备故障情况编辑】 
+    </td>
+  </tr>
+</table>
+<table align="center" width="557" border="0" bordercolor="#BEE09C" cellpadding="-2" cellspacing="-2" style="">
+  <tr>
+  <td>
+  <div>     
+    <table width="559" height="50" border="0" align="left" cellpadding="-2" cellspacing="0">
+    <tr><td colspan="2" height="25" class="style1">发生故障设备信息:</td></tr>
+    <tr>
+    <td colspan="2" class="style1"><div>
+    <form ACTION="sbgl/inssbgz.jsp" name="form2" METHOD="POST">
+    <input type="hidden" name="syr" value="<%=syr%>">
+    <select name="sb" class="Sytle_select" onchange="change2()">
+    <option value=""><font color="#ff0000">请选择设备名称&nbsp;</font></option>
+    <option <%if (sb.equals(Rs.getString("code"))) out.print("selected"); %>="" value="<%=Rs.getString("code") %>">[{Rs.getString("mc")}][{Rs.getString("code")}][{Rs.getString("xh")}]</option>
+       
+   </select>&nbsp;*&nbsp;&nbsp;&nbsp;
+   </form></div>
+  </td>
+  </tr>
+  </table>
+  </div>
+  </td>
+  </tr>
+  <tr>
+  <td>
+  <div>     
+    <table width="559" height="50" border="0" align="left" cellpadding="-2" cellspacing="-2">
+    <tr><td height="25" width="50%" class="style1">
+    <form ACTION="sbgl/inssbgz.jsp" name="formzg" METHOD="POST">
+    <input type="hidden" name="sb" value="<%=sb%>">设备使用人:
+    <select name="syr" class="Sytle_select" onchange="changezg()">
+    <option value=""><font color="#ff0000">请选择职工姓名&nbsp;</font></option>
+    
+    <option <%if (syr.equals(Rs.getString("id"))) out.print("selected"); %>="" value="<%=Rs.getString("id") %>">{Rs.getString("name")}</option>
+       
+   </select>&nbsp;*&nbsp;&nbsp;&nbsp;
+  </form>
+  
+  </td>
+                
+  </tr>
+  
+  </table>
+  </div>
+  </td>
+  </tr>
+  <form ACTION="sbgl/inssbgztl.jsp" METHOD="POST" name="formup">
+       
+    <input type="hidden" name="sb" value="<%=sb%>">     
+    <input type="hidden" name="syr" value="<%=syr%>">     
+    <input type="hidden" name="cj" value="<%=chej%>">     
+          </form><tr align="left">
+          <td align="left"><div>     
+    <table height="40" border="0" align="left" cellpadding="-2" cellspacing="-2">
+    <tr><td height="25" align="left" class="style1">设备维修人:
+                <input type="text" name="wxr" class="Sytle_text">&nbsp;*</td>
+    </tr>
+    </table>
+    </div>
+    </td>
+          </tr>
+          <tr align="left">
+            <td align="left">
+            <table>
+             <tr>
+                <td height="40" align="left" class="style1">停机时间:&nbsp;&nbsp;</td>
+                <td class="style1">
+                <input type="text" name="tingj" class="Sytle_text" id="tingj" onDBLClick="loadCalendar(this)">&nbsp;*</td>
+                <td><font color="#15600B">[输入格式："年-月-日 时间" 如：2008-10-01 17:10]</font></td>
+             </tr>
+            </table>
+            </td>
+	  	  </tr>
+	  	  
+	  	  <tr align="left">
+            <td align="left">
+            <table>
+             <tr>
+                <td height="40" align="left" class="style1">修复时间:&nbsp;&nbsp;</td>
+                <td class="style1">
+                <input type="text" name="xiuf" class="Sytle_text" id="xiuf" onDBLClick="loadCalendar(this)">&nbsp;</td>
+                <td><font color="#15600B">[输入格式："年-月-日 时间" 如：2008-10-01 17:10]</font></td>
+             </tr>
+            </table>
+            </td>
+	  	  </tr>
+	  	  <tr>
+          <td>
+            <table><tr>
+          <td height="40" align="left"><span class="style1">故&nbsp;&nbsp;&nbsp;&nbsp;障:&nbsp;&nbsp;</span></td>
+          <td align="left" colspan="6"><input name="gz" type="text" class="Style_text" id="gz" size="60">&nbsp;*</td>
+          </tr></table>
+          </td>
+          </tr>
+          <tr>
+            <td colspan="7"><div align="center">
+            
+                <input name="Button" type="button" class="Style_button" value="提&nbsp;&nbsp;交" onClick="Mycheck()">
+                <input name="Submit2" type="reset" class="Style_button" value="重&nbsp;&nbsp;置 ">                
+                <input name="myclose" type="button" class="Style_button" id="myclose" value="关&nbsp;&nbsp;闭" onClick="javascrip:window.close()">
+                </div></td>
+          </tr></form>
+        </table>
+      </td>
+  </tr>
+  <tr>
+  <td height="60">
+  <div><font color="#D43939">当前正在输入：
+   郑州检修车间月山检修车间洛阳检修车间郑州轮轴车间班组设备维修信息...</font></div>
+  <div><font color="#15600B">注：带<font color="#ff0080">&nbsp;*</font>&nbsp;号的项目为必填项，不可省略。</font></div>
+  </td>
+  </tr>
+</table>
+</td>
+</tr>
+</table>
+ <script language="javascript">
+              alert("您不是工长，不能执行此操作！");
+              window.close();
+            </script>
+         <script language="javascript">
+              alert("未登录,请重新登录！");
+              window.close();
+            </script>
+        
+  </body>
+</html>

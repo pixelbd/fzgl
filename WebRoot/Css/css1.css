@@ -1,0 +1,173 @@
+A:link {
+	COLOR: #000000; FONT-STYLE: normal; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #000000; FONT-STYLE: normal; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #f77d08; FONT-STYLE:  9pt; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #0066cc; FONT-STYLE: normal; TEXT-DECORATION: none
+}
+BODY{
+FONT-SIZE: 12px;
+COLOR: #000000;
+FONT-FAMILY:  ËÎÌו;
+background-color: #FFFFFF; 
+scrollbar-face-color: #DEE3E7;
+scrollbar-highlight-color: #FFFFFF;
+scrollbar-shadow-color: #DEE3E7;
+scrollbar-3dlight-color: #D1D7DC;
+scrollbar-arrow-color:  #006699;
+scrollbar-track-color: #EFEFEF;
+scrollbar-darkshadow-color: #98AAB1;
+}
+TD{
+font-family: ËÎÌו;
+font-size: 12px;
+line-height: 15px;
+}
+th
+{
+background-image: url('images/bg1.gif');
+background-color: #4455aa;
+color: white;
+font-size: 12px;
+font-weight:bold
+}
+td.TableTitle2
+{
+background-color: #E4E8EF;
+}
+td.TableBody1
+{
+background-color: #FFFFFF;
+}
+td.TableBody2
+{
+background-color: #E4E8EF;
+}
+.tableBorder_LR{
+	    border:1px solid #FF9900;
+	    border-bottom-style:none;
+	    border-top-style:none;
+        }
+.tableBorder_L{
+	    border:1px solid #FF9900;
+	    border-right-style:none;
+	    border-bottom-style:none;
+	    border-top-style:none;
+        }
+.tableBorder_LRB{
+	    border:1px solid #FF9900;
+	    border-top-style:none;
+        }  
+.tableBorder_Btm{
+	    border:1px solid #FF9900;
+	    border-top-style:none;
+	    border-left-style:none;
+	    border-right-style:none;
+        }
+.tableBorder_LRB2{
+	     border:1px solid #FB91C0;
+	    border-top-style:none;
+	    }         
+.tableBorder_LRB3{
+	     border:1px solid #A0C3DA;
+	    border-top-style:none;
+	    }
+.tableBorder_B {
+	   border: #DFE1FE 1px solid;
+	   background-color: #E2EFF8;
+       }
+.tableBorder_B1 {
+	   border: #FFFFFF 1px solid;
+	   background-color: #E2EFF8;
+       }
+td.TopLighNav2
+{
+background-color:#FFFFFF
+}
+.tableBorder1
+{
+border: 1px; 
+background-color: #6595D6;
+}
+.tableBorder2
+{
+border: 1px #DEDEDE solid; 
+background-color: #EFEFEF;
+}
+.tableBorder3
+{
+border: 1px #DEDEDE solid;
+}
+.tableBorder4
+{   
+border: 1px #6894D5 dot;
+}
+
+.tableBorder_Top{
+	border:1px solid #9CA6C6;
+	border-bottom-style:none;
+	border-left-style:none; 
+	border-right-style:none
+}
+
+#TableTitleLink A:link, #TableTitleLink A:visited, #TableTitleLink A:active {
+	COLOR: #FFFFFF;
+	TEXT-DECORATION: none;
+}
+#TableTitleLink A:hover {
+	COLOR: #FFFFFF;
+	TEXT-DECORATION: underline;}
+
+input, select, textarea{
+font-family:Tahoma,Verdana,ËÎÌו; font-size: 12px; line-height: 15px;}
+}
+.normalTextSmall 
+{ 
+    font-size : 11px;
+    color : #000000; 
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.textcolor1
+{
+    font-size : 13px;
+    color : #B56A1A;
+}
+.word_white{
+ color:#FFFFFF;
+}
+.word_yellow{
+ color:#F6A54E;
+}
+INPUT.Style_button {
+	  BORDER-RIGHT: #4E759C 1px solid; BORDER-TOP: #4E759C 1px solid; FONT-SIZE: 9pt; 
+	  BACKGROUND: #EFEFEF; BORDER-LEFT: #4E759C 1px solid; COLOR: #4E759C; BORDER-BOTTOM: #4E759C 1px solid;HEIGHT: 20px;width: 60px
+       }
+INPUT.Style_button3 {
+	  BORDER-RIGHT: #0080ff 1px solid; BORDER-TOP: #0080ff 1px solid; FONT-SIZE: 9pt; 
+	  BACKGROUND: #EFEFEF; BORDER-LEFT: #0080ff 1px solid; COLOR: #4E759C; BORDER-BOTTOM: #0080ff 1px solid;HEIGHT: 17px;width: 30px
+       }       
+INPUT.Style_longbutton {
+	  BORDER-RIGHT: #4E759C 1px solid; BORDER-TOP: #4E759C 1px solid; FONT-SIZE: 9pt; 
+	  BACKGROUND: #EFEFEF; BORDER-LEFT: #4E759C 1px solid; COLOR: #4E759C; BORDER-BOTTOM: #4E759C 1px solid;HEIGHT: 20px;width: 130px
+       }
+INPUT.Sytle_text {
+	BACKGROUND: #FFFFFF;BORDER-RIGHT:#4E759C  1px solid; BORDER-TOP:#4E759C 1px solid; FONT-SIZE: 9pt; COLOR: #4E759C;BORDER-LEFT:#4E759C 1px solid;BORDER-BOTTOM:#4E759C 1px solid;HEIGHT: 19px
+}
+INPUT.Sytle_text2 {
+	BACKGROUND: #FFFFFF;BORDER-RIGHT:0px solid; BORDER-TOP:0px solid; FONT-SIZE: 9pt; COLOR: #4E759C;BORDER-LEFT:0px solid;BORDER-BOTTOM:0px solid;HEIGHT: 18px
+}
+INPUT.Sytle_textred {
+	BACKGROUND: #FFFFFF;BORDER-RIGHT:#D84E3F 1px solid; BORDER-TOP:#D84E3F 1px solid; FONT-SIZE: 10pt; COLOR: #D84E3F;BORDER-LEFT:#D84E3F 1px solid;BORDER-BOTTOM:#D84E3F 1px solid;HEIGHT: 20px
+}
+INPUT.Sytle_textredsm {
+	BACKGROUND: #FFFFFF;BORDER-RIGHT:#D84E3F 1px solid; BORDER-TOP:#D84E3F 1px solid; FONT-SIZE: 10pt; COLOR: #D84E3F;BORDER-LEFT:#D84E3F 1px solid;BORDER-BOTTOM:#D84E3F 1px solid;HEIGHT: 20px
+} 
+INPUT.Style_button2{
+	  BORDER-RIGHT: #FF9900 1px solid; BORDER-TOP: #FF9900 1px solid; FONT-SIZE: 9pt; 
+	  BACKGROUND: #F5E2C6; BORDER-LEFT: #FF9900 1px solid; COLOR:#6A4A2F; BORDER-BOTTOM: #FF9900 1px solid;HEIGHT: 20px;width: 60px
+       }

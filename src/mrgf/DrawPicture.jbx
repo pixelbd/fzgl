@@ -1,0 +1,16 @@
+[PropertyInfo]
+data,int[],false,false,data,data,true,<default>
+pictureHeight,int,false,false,pictureHeight,pictureHeight,true,<default>
+pictureTitle,String,false,false,pictureTitle,pictureTitle,true,<default>
+pictureType,String,false,false,pictureType,pictureType,true,<default>
+pictureWidth,int,false,false,pictureWidth,pictureWidth,true,<default>
+XTitle,String[],false,false, , ,true,<default>
+xTitle,String[],false,false,xTitle,xTitle,true,<default>
+YTitle,String[],false,false, , ,true,<default>
+yTitle,String[],false,false,yTitle,yTitle,true,<default>
+valueOrPercent,String,false,false,valueOrPercent,valueOrPercent,true,<default>
+[IconNames]
+
+
+
+
